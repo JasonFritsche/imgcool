@@ -9,10 +9,10 @@ const getters = {
 };
 
 const actions = {
+  login: () => api.login(),
   logout: ({ commit }) => {
     commit('setToken', null);
   },
-  login: () => api.login(),
 };
 
 const mutations = {
